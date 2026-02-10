@@ -106,8 +106,8 @@ pwsh -NoProfile -Command `
    - Destination path (e.g. `D:\`)
    - Backup type
 3. Click **Start Backup**
-4. A console window opens to show real-time progress (struggling to do so)
-5. A confirmation appears when the backup finishes (struggling to do so)
+4. A console window opens to show real-time progress
+5. A confirmation appears when the backup finishes
 
 ### Command Line (Advanced users)
 
