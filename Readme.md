@@ -89,8 +89,16 @@ pwsh -NoProfile -Command `
 
 - Creates `BackupTools` in your user profile
 - Creates the `logs` folder
-- Downloads all required files from GitHub
+- Downloads all required files from GitHub 
 - Adds `BackupTools` to your user PATH
+
+ ### ⚠️ If Script Execution Is Blocked 
+ 
+ If PowerShell prevents the script from running, you may need to allow local scripts:
+ 
+ ```powershell
+Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope CurrentUser
+```
 
 > ℹ️ **Note:** Restart PowerShell or log out/in after installation to use PATH commands.
 
