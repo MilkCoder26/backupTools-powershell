@@ -89,7 +89,7 @@ pwsh -NoProfile -Command `
 
 - Creates `BackupTools` in your user profile
 - Creates the `logs` folder
-- Downloads all required files from GitHub
+- Downloads all required files from GitHub 
 - Adds `BackupTools` to your user PATH
 
 > ℹ️ **Note:** Restart PowerShell or log out/in after installation to use PATH commands.
@@ -100,7 +100,7 @@ pwsh -NoProfile -Command `
 
 ### Graphical Interface (Recommended for end users)
 
-1. Double-click `Backup.exe`
+1. Go to the folder `C:\Users\YOUR_USERNAME\BackupTools` Double-click `Backup.exe`
 2. Select:
    - Source path (e.g. `E:\`)
    - Destination path (e.g. `D:\`)
@@ -114,7 +114,15 @@ pwsh -NoProfile -Command `
 You can also run backups directly:
 
 ```powershell
+pwsh #to start executing
 DiskCopy -SourcePath "E:\" -DestinationRoot "D:\" -Mode Complete
+```
+### ⚠️ If Script Execution Is Blocked 
+ 
+ If PowerShell prevents the script from running, you may need to allow local scripts:
+ 
+ ```powershell
+Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope CurrentUser
 ```
 
 **Available modes:**
