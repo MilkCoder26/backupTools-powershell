@@ -89,4 +89,6 @@ Write-Host "BackupTools installation completed!"
 Write-Host "Install location : $InstallRoot"
 Write-Host "Logs location    : $LogFolder"
 Write-Host "Restart your terminal or log out/in to use PATH commands."
+Write-Host "Double-click Backup.exe to run the script."
+Write-Host "Start backing up !" -ForegroundColor Green
 Write-Host "----------------------------------------" -ForegroundColor Green
