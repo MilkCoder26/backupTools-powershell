@@ -17,7 +17,7 @@ $GitHubBaseUrl = "https://raw.githubusercontent.com/MilkCoder26/backupTool-power
 
 $FilesToDownload = @(
     "Backup.exe",
-    "BackupGUI.exe",
+    "BackupGUI.ps1",
     "DiskCopy.ps1"
 )
 
