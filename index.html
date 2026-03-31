@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Install BackupTools</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        background: #0f172a;
+        color: white;
+        display: flex;
+        height: 100vh;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+      }
+      button {
+        padding: 15px 25px;
+        font-size: 18px;
+        background: #22c55e;
+        border: none;
+        border-radius: 8px;
+        cursor: pointer;
+      }
+      button:hover {
+        background: #16a34a;
+      }
+      code {
+        margin-top: 20px;
+        background: #1e293b;
+        padding: 10px;
+        border-radius: 6px;
+        display: block;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>BackupTools Installer</h1>
+    <p>Click the button to copy the install command</p>
+
+    <button onclick="copyCommand()">Copy Install Command</button>
+
+    <code id="cmd">
+      pwsh -NoProfile -Command ` "iwr
+      https://raw.githubusercontent.com/MilkCoder26/backupTool-powershell/main/install.ps1
+      -UseBasicParsing | iex"
+    </code>
+
+    <script>
+      function copyCommand() {
+        const text = document.getElementById("cmd").innerText;
+        navigator.clipboard.writeText(text);
+        alert("Command copied! Paste it into PowerShell.");
+      }
+    </script>
+  </body>
+</html>
